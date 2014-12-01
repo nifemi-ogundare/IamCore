@@ -5,7 +5,9 @@ import ng.nifemi.iamcore.person.Identity;
 import ng.nifemi.iamcore.storage.AddressDAO;
 import ng.nifemi.iamcore.storage.HibernateDAO;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
