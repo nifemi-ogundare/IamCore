@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Nov 23 21:43:13 CET 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0149-de64-ddf1-0000059a4148 
+on database directory /home/nifemi/iam with class loader sun.misc.Launcher$AppClassLoader@1c8825a5 
+Loaded from file:/home/nifemi/.m2/repository/org/apache/derby/derby/10.11.1.1/derby-10.11.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_72-b14
+user.dir=/home/nifemi/workspace/IamCore
+os.name=Linux
+os.arch=amd64
+os.version=3.2.0-51-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
