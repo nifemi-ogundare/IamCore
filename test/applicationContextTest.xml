@@ -29,6 +29,4 @@
 	        </value>
 	    </property>
 	</bean>
-	
-	<import resource="configurationContextTest.xml"/>
 </beans>

@@ -11,14 +11,15 @@
 	<context:annotation-config />
 	<context:component-scan base-package="ng.nifemi.iamcore.storage"/>
 
-	<bean id="fakeIdentity" class="ng.nifemi.iamcore.person.Identity">
-		<constructor-arg><value>Thomas Broussard</value></constructor-arg>
-		<constructor-arg><value>thomas.broussard@gmail.com</value></constructor-arg>
-		<constructor-arg><value>1234-09-09</value></constructor-arg>
+	<bean id="fakeId" class="ng.nifemi.iamcore.person.Identity">
+		<property name="fullName"><value></value></property>
+		<property name="email"><value></value></property>
+		<property name="birthDate"><value></value></property>
 	</bean>
 	
-	<bean id="fakeIdentity2" class="ng.nifemi.iamcore.person.Identity">
-	    <property name="fullName"><value>Jack Harkness</value></property>
+	<bean id="newUser" class="ng.nifemi.iamcore.person.User">
+		<property name="login"><value></value></property>
+		<property name="password"><value></value></property>
 	</bean>
 	
 	<bean id="mySessionFactory"
@@ -29,6 +30,4 @@
 	        </value>
 	    </property>
 	</bean>
-	
-	<import resource="configurationContext.xml"/>
-</beans>	
+</beans>

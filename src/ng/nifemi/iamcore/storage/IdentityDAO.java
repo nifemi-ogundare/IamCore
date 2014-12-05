@@ -3,13 +3,11 @@ package ng.nifemi.iamcore.storage;
 import java.util.List;
 
 import org.hibernate.Criteria;
-import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Disjunction;
-import org.hibernate.criterion.LogicalExpression;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -22,7 +20,7 @@ import ng.nifemi.iamcore.person.Person;
  *
  */
 @Component
-public class HibernateDAO implements DAO {	
+public class IdentityDAO implements DAO {	
 	
 	@Autowired
 	SessionFactory sessionFactory;
@@ -30,7 +28,7 @@ public class HibernateDAO implements DAO {
 	/**
 	 * 
 	 */
-	public HibernateDAO() {
+	public IdentityDAO() {
 	}
 	
 	@Override

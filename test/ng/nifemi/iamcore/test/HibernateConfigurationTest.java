@@ -3,7 +3,7 @@ package ng.nifemi.iamcore.test;
 import ng.nifemi.iamcore.person.Address;
 import ng.nifemi.iamcore.person.Identity;
 import ng.nifemi.iamcore.storage.AddressDAO;
-import ng.nifemi.iamcore.storage.HibernateDAO;
+import ng.nifemi.iamcore.storage.IdentityDAO;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -36,7 +36,7 @@ public class HibernateConfigurationTest {
 	AddressDAO dao;
 	
 	@Autowired
-	HibernateDAO idDao;
+	IdentityDAO idDao;
 	
 	/**
 	 * 

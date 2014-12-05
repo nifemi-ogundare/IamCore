@@ -2,7 +2,7 @@ package ng.nifemi.iamcore.test;
 
 import ng.nifemi.iamcore.person.Identity;
 import ng.nifemi.iamcore.storage.AddressDAO;
-import ng.nifemi.iamcore.storage.HibernateDAO;
+import ng.nifemi.iamcore.storage.IdentityDAO;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -21,13 +21,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class DaoTest {
 	
 	@Autowired
-	AddressDAO addressDAO;
-	
-	@Autowired
-	HibernateDAO hibernateDAO;
-	
-	@Autowired
-	SessionFactory sessionFactory;
+	IdentityDAO identityDAO;
 	
 	@Autowired
 	Identity identity;
@@ -37,14 +31,7 @@ public class DaoTest {
 	 * 
 	 */
 	public void testSave() {
-		Session session = sessionFactory.openSession();
-		Transaction tx = session.beginTransaction();
-		
-		Identity identity = new Identity();
-		session.save(identity);
-		System.out.println(identity.getId());
-		tx.commit();
-		session.close();
+		identityDAO.save(identity);
 	}
 
 }

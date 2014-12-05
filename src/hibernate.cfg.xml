@@ -23,6 +23,7 @@
 		
 		<mapping class="ng.nifemi.iamcore.person.Identity"/>
 		<mapping class="ng.nifemi.iamcore.person.Address"/>
+		<mapping class="ng.nifemi.iamcore.person.User"/>
 		<!-- <property name="hibernate.connection.driver_class">org.mariadb.jdbc.Driver</property> 
 			<property name="hibernate.connection.password">root</property> <property 
 			name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property> 
